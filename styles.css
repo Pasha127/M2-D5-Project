@@ -3,7 +3,10 @@
     border: 1px solid black;
     box-sizing: border-box;
     overflow: hidden;
-    border-radius: 10px;    
+    border-radius: 10px;
+    
+    min-height: 10px;
+    min-width: 10px;
 }
 body *{
     display: flex;
@@ -13,6 +16,9 @@ script{
     display: none;
 }
 
+button{}
+
+
 body{
     height: 100vh;
     width: 100vw;
@@ -20,3 +26,74 @@ body{
     flex-direction: column;
     display: flex;
 }
+header{    
+
+}
+.logo{}
+.title{}
+.menuButton{}
+.inputContainer{}
+.nameHeading{}
+.nameInputFields{}
+.nameInput{}
+.tierInput{}
+.enterPlayerButton{}
+.poolListHeading{}
+.poolListContainer{}
+.poolBox{}
+.participantZone{}
+.poolParticipantContainer{}
+.poolParticipant{}
+.poolAddToTeamButton{}
+.poolDeleteButton{}
+.searchIcon{}
+.seeFullPoolButton{}
+.buildTeamsButton{}
+.teamsContainer{}
+.teamCard{}
+.cardHeader{}
+.cardHeaderLine1{}
+.cardTitle{}
+.lockIcon{}
+.cardHeaderLine2{}
+.teamNameInput{}
+.cardTeamSize{}
+.cardTeamList{}
+.cardParticipant{}
+.switchTeamButton{}
+.arrowIcon{}
+.removeFromTeamButton{}
+.xIcon{}
+.cardFooter{}
+.editTeamButton{}
+.teamInspectionBody{}
+.teamInspectionContainer{}
+.teamInspectionHeader{}
+.teamInspectionTeamNumber{}
+.teamInspectionTeamName{}
+.teamInspectionListContainer{}
+.teamInspectionItem{}
+.inspectionParticipant{}
+.inspectionSwitchTeamButton{}
+.inspectionRemoveFromTeamButton{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
