@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;    
+}
+body *{
+    display: flex;
+}
+
+script{
+    display: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    display: flex;
+}

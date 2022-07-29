@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Builder</title>
+    <link rel="stylesheet" href="./styles.css"/>   
+</head>
+<body>
+    <header class="headerContainer" id="headerContainer">
+        <div class="logo" id="logo"></div>
+        <h1 class="title" id="title"></h1>
+        <div class="menuButton" id="menuButton"></div>
+    </header>
+    <div class="inputContainer" id="inputContainer">
+        <div class="nameHeading" id="nameHeading">Enter participants' names:</div>
+        <div class="nameInputFields" id="nameInputFields">
+            <input class="nameInput" id="nameInput" placeholder="Enter name here">
+            <input class="tierInput" id="tierInput" placeholder="Enter tier here">
+            <button class="enterPlayerButton" id="enterPlayerButton">Enter Participant</button>
+        </div>
+        <div class="poolListHeading" id="poolListHeading">Participants</div>
+       <div class="poolListContainer" id="poolListContainer">
+            <div class="poolBox" id="poolBox">
+                <div class="participantZone" id="participantZone">
+                    <div class="poolParticipantContainer" id="examplePoolParticipantContainer">
+                        <div class="poolParticipant" id="examplePoolParticipant">Name & Tier</div>
+                        <button class="poolAddToTeamButton" id="examplePoolAddToTeamButton"> + Manual Add</button>
+                        <button class="poolDeleteButton" id="examplePoolDeleteButton"></button>
+
+                    </div>
+                </div>
+                <div class="searchIcon" id="searchIcon"></div>
+                <div class="seeFullPoolButton" id="seeFullPoolButton"></div>
+            </div>
+            <button class="buildTeamsButton" id="buildTeamsButton">Build Random Teams</button>
+       </div>
+       <div class="teamsContainer" id="teamsContainer">
+            <div class="teamCard" id="teamCardExample">
+                <div class="cardHeader" id="cardExampleHeader">
+                    <div class="cardHeaderLine1" id="cardExampleHeaderLine1">
+                        <div class="cardTitle" id="exampleCardTitle">Team Number</div>
+                        <div class="lockIcon" id="exampleCardLock"></div>                
+                    </div>
+                    <div class="cardHeaderLine2" id="cardExampleHeaderLine2">
+                        <input class="teamNameInput" id="exampleCardTeamNameInput">
+                        <div class="teamSize" id="exampleCardTeamSize">Team Size: X</div>
+                    </div>
+                </div>
+                <div class="cardTeamList" id="exampleCardTeamList">
+                    <div class="cardParticipant" id="exampleCardParticipant"></div>
+                    <div class="switchTeamButton" id="exampleCardSwitchTeamButton">
+                        <div class="arrowIcon"></div>
+                    </div>
+                    <div class="removeFromTeamButton" id="exampleCardRemoveFromTeamButton">
+                        <div class="xIcon"></div>
+                    </div>
+                </div>
+                <div class="cardFooter" id="exampleCardFooter">
+                    <button class="editTeamButton" id="exampleCardEditTeamButton">Edit Team</button>
+                </div>                
+            </div>
+       </div>
+    </div>
+    <div class="teamInspectionBody" id="teamInspectionBody">
+        <div class="teamInspectionContainer" id="teamInspectionContainer">
+            <div class="teamInspectionHeader" id="teamInspectonHeader">
+                <div class="teamInspectionTeamNumber" id="teamInspectionTeamNumber">Team #</div>
+                <div class="teamInspectionTeamName" id="teamInspectionTeamName">Team Name</div>
+            </div>
+            <div class="teamInspectionListContainer" id="teamInspectionListContainer">
+                <div class="teamInspectionItem">
+                    <div class="inspectionParticipant"></div>
+                    <div class="inspectionSwitchTeamButton">
+                        <div class="arrowIcon"></div>
+                    </div>
+                    <div class="inspectionRemoveFromTeamButton" >
+                        <div class="xIcon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+    
+</body>
+<script src="./script.js"></script>
+</html>
