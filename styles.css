@@ -16,7 +16,9 @@ script{
     display: none;
 }
 
-button{}
+button{
+    cursor: pointer;
+}
 
 
 body{
@@ -51,6 +53,7 @@ header{
     align-items: center;
     margin-left: auto;
     margin-right: 20px;
+    cursor: pointer;
 }
 .inputContainer{
     flex-direction: column;
@@ -64,6 +67,7 @@ header{
 .nameInput{}
 .tierInput{}
 .enterPlayerButton{}
+.resetPlayerButton{}
 .poolListHeading{
     background-color: aqua;
 }
@@ -75,7 +79,11 @@ header{
 .poolBox{
     flex-direction: column;
 }
-.participantZone{}
+.participantZone{
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
 .poolParticipantContainer{
     height: 30px;
 }
@@ -85,13 +93,16 @@ header{
 .searchIcon{
     width: 100px;    
     margin-left: auto;
+    cursor: pointer;
 }
 .seeFullPoolButton{
     width: 100px;    
     margin-left: auto;
+    cursor: pointer;
 }
 .mainButtonBox{
     background-color: blueviolet;
+    justify-content: center;
 }
 .buildTeamsButton{}
 .lockTeamsButton{}
@@ -101,6 +112,7 @@ header{
     background-color: orangered;
     flex-direction: row;
     height: 100px;
+    justify-content: center;
 }
 .teamCard{
     flex-direction: column;
@@ -110,47 +122,99 @@ header{
 }
 .cardHeaderLine1{}
 .cardTitle{}
-.lockIcon{}
+.lockIcon{
+    cursor: pointer;
+}
 .cardHeaderLine2{}
 .teamNameInput{}
 .cardTeamSize{}
 .cardTeamList{}
 .cardParticipant{}
-.switchTeamButton{}
-.arrowIcon{}
-.removeFromTeamButton{}
-.xIcon{}
+.switchTeamButton{
+    cursor: pointer;
+}
+.arrowIcon{
+    cursor: pointer;
+}
+.removeFromTeamButton{
+    cursor: pointer;
+}
+.xIcon{
+    cursor: pointer;
+}
 .cardFooter{}
-.editTeamButton{}
+.editTeamButton{
+    cursor: pointer;
+}
 .teamInspectionBody{
     background-color: sienna;
-    flex-direction: column;}
+    flex-direction: column;
+    align-items: center;
+}
 .teamInspectionContainer{
     flex-direction: column;
+    
 }
 .teamInspectionHeader{}
 .teamInspectionTeamNumber{}
 .teamInspectionListContainer{}
 .teamInspectionItem{}
 .inspectionParticipant{}
-.inspectionSwitchTeamButton{}
-.inspectionRemoveFromTeamButton{}
+.inspectionSwitchTeamButton{
+    cursor: pointer;
+}
+.inspectionRemoveFromTeamButton{
+    cursor: pointer;
+}
 .mainMenuBody{
     flex-direction: column;
     background-color: lemonchiffon;
+    justify-content: center;
 }
 .mainMenuContainer{
     flex-direction: column;
 }
-.saveScreenBody{}
+.saveScreenBody{
+    justify-content: center;
+}
 .saveScreenContainer{}
 .saveNameInput{}
-.saveButton{}
-.menuSave{}
-.menuLoad{}
-.menuPrint{}
-.menuDark{}
-.closeButton
+.saveButton{
+    cursor: pointer;
+}
+.menuSave{
+    cursor: pointer;
+}
+.menuLoad{
+    cursor: pointer;
+}
+.menuPrint{
+    cursor: pointer;
+}
+.menuDark{
+    cursor: pointer;
+}
+.closeButton{
+    cursor: pointer;
+}
+.loadScreenBody{
+    justify-content: center;
+}
+.loadScreenContainer{
+    flex-direction: column;
+}
+.loadItem{}
+.loadCloseButton{
+    margin-left: auto;
+    cursor: pointer;
+}
+.loadList{
+    flex-direction: column;
+}
+.clearMemButton{
+    cursor: pointer;
+}
+
 
 
 
