@@ -1,7 +1,3 @@
-//document.location.reload(true); // debug refresh
-//javascript:window.close('','_parent',''); //debug closer
-//.style.backgroundColor = "#000000";  //debug colorer
-
 //declaration of DOM object variables
 
 const body = document.querySelector("body");
@@ -51,6 +47,14 @@ saveScreenBody.style.display = "none";
 mainMenuBody.style.display = "none";
 loadScreenBody.style.display = "none";
 
+//general functions
+const closeWindow = function(){
+    javascript:window.close('','_parent','');
+}
+const refreshWindow = function(){
+    document.location.reload(true);
+}
+
 //initializing object to hold event data
 
 let currentEvent =  {
@@ -88,7 +92,7 @@ const addParticipant = function () {
 }
 const resetParticipants = function (){
     const listOfParticipants = document.querySelectorAll(".participantZone > div");
-    console.log(listOfParticipants);
+    //console.log(listOfParticipants);
     for(i=0;i<listOfParticipants.length;i++){
         listOfParticipants[i].style.display="none";
     }
@@ -145,8 +149,9 @@ const saveData = function (){
     //take all data and put it into object
     currentEvent.eventName = saveNameInput.value;
     const savedData = Object.assign({},currentEvent)
-    console.log(savedData);
-    localStorage.setItem(currentEvent.eventName, savedData);
+    //console.log(currentEvent.eventName);
+    localStorage.setItem(currentEvent.eventName, JSON.stringify(savedData));
+    //console.log(JSON.parse(localStorage.getItem(currentEvent.eventName)));
     clearLoadList();
     populateLoad();
     saveOff();
@@ -159,6 +164,14 @@ const clearMemory = function (){
     clearLoadList();
     localStorage.clear()
 }
+const loadEvent = function(e){
+    const newObj = JSON.parse(localStorage.getItem(e.target.innerText))
+    console.log(newObj);
+    console.log("loaded");
+    resetParticipants();
+
+    loadOff();
+}
 
 const populateLoad = function () {
     
@@ -166,7 +179,8 @@ const populateLoad = function () {
         const newDiv = document.createElement("div");
         newDiv.setAttribute("class","loadItem");
         newDiv.innerText = Object.keys(localStorage)[i];
-        loadList.append(newDiv)
+        newDiv.addEventListener("click", loadEvent);
+        loadList.append(newDiv);
     }     
 }
 populateLoad();

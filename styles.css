@@ -203,7 +203,9 @@ header{
 .loadScreenContainer{
     flex-direction: column;
 }
-.loadItem{}
+.loadItem{
+    cursor: pointer;
+}
 .loadCloseButton{
     margin-left: auto;
     cursor: pointer;
