@@ -22,7 +22,7 @@
         <div class="nameInputFields" id="nameInputFields">
             <input class="nameInput" id="nameInput" placeholder="Enter name here">
             <input class="tierInput" id="tierInput" placeholder="Enter tier here">
-            <button class="enterPlayerButton" id="enterPlayerButton">Enter Participant</button>
+            <button type="button" class="enterPlayerButton" id="enterPlayerButton">Enter Participant</button>
         </div>
         <div class="poolListHeading" id="poolListHeading">Participants:</div>
        <div class="poolListContainer" id="poolListContainer">
@@ -31,18 +31,18 @@
                 <div class="participantZone" id="participantZone">
                     <div class="poolParticipantContainer" id="examplePoolParticipantContainer">
                         <div class="poolParticipant" id="examplePoolParticipant">Name & Tier</div>
-                        <button class="poolAddToTeamButton" id="examplePoolAddToTeamButton"> + Manual Add</button>
-                        <button class="poolDeleteButton" id="examplePoolDeleteButton">Delete</button>
+                        <button type="button" class="poolAddToTeamButton" id="examplePoolAddToTeamButton"> + Manual Add</button>
+                        <button type="button" class="poolDeleteButton" id="examplePoolDeleteButton">Delete</button>
 
                     </div>
                 </div>
                 <div class="seeFullPoolButton" id="seeFullPoolButton">See full list</div>
             </div>
             <div class="mainButtonBox" id="mainButtonBox">
-                <button class="buildTeamsButton" id="buildTeamsButton">Build Random Teams</button>
-                <button class="lockTeamsButton" id="lockTeamsButton">Lock All</button>
-                <button class="unlockTeamsButton" id="unlockTeamsButton">Unlock All</button>
-                <button class="resetTeamsButton" id="resetTeamsButton">Reset</button>
+                <button type="button" class="buildTeamsButton" id="buildTeamsButton">Build Random Teams</button>
+                <button type="button" class="lockTeamsButton" id="lockTeamsButton">Lock All</button>
+                <button type="button" class="unlockTeamsButton" id="unlockTeamsButton">Unlock All</button>
+                <button type="button" class="resetTeamsButton" id="resetTeamsButton">Reset</button>
             </div>
        </div>
        <div class="teamsContainer" id="teamsContainer">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="cardFooter" id="exampleCardFooter">
-                    <button class="editTeamButton" id="exampleCardEditTeamButton">Edit Team</button>
+                    <button type="button" class="editTeamButton" id="exampleCardEditTeamButton">Edit Team</button>
                 </div>                
             </div>
        </div>
@@ -76,7 +76,7 @@
         <div class="teamInspectionContainer" id="teamInspectionContainer">
             <div class="teamInspectionHeader" id="teamInspectonHeader">
                 <div class="teamInspectionTeamNumber" id="teamInspectionTeamNumber">Team #</div>
-                <input class="teamNameInput" id="exampleCardTeamNameInput" placeholder="Team name">
+                <input class="teamNameInput" id="inspectionTeamNameInput" placeholder="Team name">
             </div>
             <div class="teamInspectionListContainer" id="teamInspectionListContainer">
                 <div class="teamInspectionItem">
@@ -94,17 +94,20 @@
     </div>
     <div class="mainMenuBody" id="mainMenuBody">
         <div class="mainMenuContainer" id="mainMenuContainer">
-            <p>Save</p>
-            <p>Load</p>
-            <p>Print</p>
-            <p>Dark Mode</p>
+            <div class="menuSave">Save</div>
+            <div class="menuLoad">Load</div>
+            <div class="menuPrint">Print</div>
+            <div class="menuDark">Dark Mode Toggle</div>
         </div>
     </div>
     <div class="saveScreenBody" id="saveScreenBody">
         <div class="saveScreenContainer" id="saveScreenContainer">
             <h2>Save:</h2>
             <input class="saveNameInput" id="saveNameInput">
-            <button class="saveButton" id="saveButton"></button>
+            <button type="button" class="saveButton" id="saveButton">Save</button>
+            <div class="saveCloseButton" >
+                <div class="xIcon">X</div>
+            </div>
         </div>
     </div>
 
