@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Builder</title>
     <link rel="stylesheet" href="./styles.css"/>   
+    <script src="https://kit.fontawesome.com/2694a4f664.js" crossorigin="anonymous"></script>
+ 
 </head>
 <body>
     <header class="headerContainer" id="headerContainer">
-        <div class="logo" id="logo">logo</div>
+        <!-- <div class="logo" id="logo">logo</div> -->
         <h1 class="title" id="title">Team Builder</h1>
         <div class="menuButton" id="menuButton">
             <div class="menuBar"></div>
@@ -28,7 +30,12 @@
         <div class="poolListHeading" id="poolListHeading">Participants:</div>
        <div class="poolListContainer" id="poolListContainer">
            <div class="poolBox" id="poolBox">
-                <div class="searchIcon" id="searchIcon">SearchIcon</div>
+            <div class="searchContainer" id="searchContainer">
+                <input class="searchBarUP" id="searchBarUP" placeholder="Enter name">        
+                <div class="searchIconBox" id="searchIcon">
+                        <i class="fa-solid fa-magnifying-glass"></i>Search
+                </div>
+            </div>
                 <div class="participantZone" id="participantZone">
                     <!-- <div class="poolParticipantContainer" id="examplePoolParticipantContainer">
                         <div class="poolParticipant" id="examplePoolParticipant">Name & Tier</div>
@@ -40,6 +47,7 @@
                 <div class="seeFullPoolButton" id="seeFullPoolButton">See full list</div>
             </div>
             <div class="mainButtonBox" id="mainButtonBox">
+                <input class="teamNumberInput" id="teamNumberInput" placeholder="Number of teams">
                 <button type="button" class="buildTeamsButton" id="buildTeamsButton">Build Random Teams</button>
                 <button type="button" class="lockTeamsButton" id="lockTeamsButton">Lock All</button>
                 <button type="button" class="unlockTeamsButton" id="unlockTeamsButton">Unlock All</button>

@@ -79,20 +79,28 @@ header{
 .poolBox{
     flex-direction: column;
 }
+.searchContainer{}
+.searchBarUP{
+    margin-left: auto;
+}
 .participantZone{
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 10px;
     
 }
 .poolParticipantContainer{
     height: 30px;
 }
 .poolParticipant{}
+.poolParticipantTier{}
 .poolAddToTeamButton{}
 .poolDeleteButton{}
-.searchIcon{
-    width: 100px;    
-    margin-left: auto;
+.teamNumberInput{
+
+}
+.searchIconBox{       
+    
     cursor: pointer;
 }
 .seeFullPoolButton{
