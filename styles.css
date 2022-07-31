@@ -73,7 +73,7 @@ header{
 }
 .poolListContainer{
     background-color: aquamarine;
-    height: 100px;
+    min-height: 100px;
     flex-direction: column;
 }
 .poolBox{
@@ -124,6 +124,7 @@ header{
 }
 .teamCard{
     flex-direction: column;
+    height: 50%;
 }
 .cardHeader{
     flex-direction: column;
@@ -132,17 +133,28 @@ header{
 .cardTitle{}
 .lockIcon{
     cursor: pointer;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
 }
 .cardHeaderLine2{}
 .teamNameInput{}
 .cardTeamSize{}
-.cardTeamList{}
+.cardTeamList{
+    flex-direction: column;
+}
 .cardParticipant{}
 .switchTeamButton{
     cursor: pointer;
 }
 .arrowIcon{
     cursor: pointer;
+}
+.teamsContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 600px;
+    overflow-y: auto;
 }
 .removeFromTeamButton{
     cursor: pointer;
@@ -223,6 +235,9 @@ header{
 }
 .clearMemButton{
     cursor: pointer;
+}
+.invisible{
+    display: none !important;
 }
 
 
